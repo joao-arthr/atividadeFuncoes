@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heróis</title>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="block">
+            <form>
+                <label for="rep">Quantidade de repetições</label>
+                <input type="text" id="rep">
+                <br>
+                <label for="universo">Selecione um universo de heróis</label>
+                <select id="universo" onchange="changeUniverse()">
+                    <option value="">-----</option>
+                    <option value="dc">DC</option>
+                    <option value="marvel">Marvel</option>
+                </select>
+                <br>
+
+                <label for="herois">Heroi</label>
+                <select id="herois"></select>
+
+                <br>
+                <button type="submit" onclick="repeticao()">Exibir</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
